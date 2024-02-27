@@ -598,16 +598,16 @@ getProcInfo(int pid, struct processInfo* info)
   return 0;
 }
 
-// void
-// setprio(int priority)
-// {
-//   myproc()->priority = priority;
-// }
+void
+setprio(int priority)
+{
+  myproc()->priority = priority;
+}
 
-// int
-// getprio(void)
-// {
-//   int priority = myproc()->priority;
+int
+getprio(void)
+{
+  int priority = myproc()->priority;
 
-//   return priority;
-// }
+  return priority;
+}
