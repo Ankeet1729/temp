@@ -140,9 +140,9 @@ sys_setprio(void)
   int priority;
   argint(0, &priority);
 
-  // setprio(priority);
+  setprio(priority);
 
-  myproc()->priority = priority; // comment this line out jab proc.c mei uncomment karo
+  // myproc()->priority = priority; // comment this line out jab proc.c mei uncomment karo
 
   return 0;
 }
@@ -150,10 +150,10 @@ sys_setprio(void)
 int
 sys_getprio(void)
 {
-  // getprio();
+  getprio();
+  return 0;
 
 
-
-  return myproc()->priority;   // // comment this line out jab proc.c mei uncomment karo
+  // return myproc()->priority;   // // comment this line out jab proc.c mei uncomment karo
 
 }
